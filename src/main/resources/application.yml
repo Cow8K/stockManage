@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  typeAliasesPackage: "com.cow8k.stock.shop.entity,com.cow8k.stock.tiktok.entity"
+  mapperLocations: classpath:mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8080
+  servlet:
+    context-path: /stock
