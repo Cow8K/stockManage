@@ -17,7 +17,7 @@ public class TikTokShop {
     private String shopName;
     private String appKey;
     private String appSecret;
-    private String autoCode;
+    private String authCode;
     private String accessToken;
     private LocalDateTime accessTokenExpireTime;
     private String refreshToken;
